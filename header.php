@@ -33,8 +33,44 @@
 
 <!-- App-header -->
 <header id="app-header">
-
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-auto">
+                <a href="/" class="logo">
+                    Logo
+                </a>            
+            </div>
+            <div class="col-8 col-lg-6">
+                <div class="header-nav d-none d-sm-block">
+                    <ul class="header-nav-menu">
+                    <?php
+                    foreach ($nav as $key => $value) {
+                        echo '<li><a href="/' . $key . '"' . 'class="scroll-link">' . $value . '</a></li>';
+                    }
+                    ?>
+                    </ul>
+                </div> 
+                <div class="burger-menu d-flex d-sm-none flex-column justify-content-between">
+                    <div class="line line--top"></div>
+                    <div class="line line--middle"></div>
+                    <div class="line line--bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
+<div class="menu">
+    <div class="menu-nav">
+        <ul class="menu-nav-list">
+            <?php
+            foreach ($nav as $key => $value) {
+                echo '<li><a href="/' . $key . '"' . 'class="scroll-link">' . $value . '</a></li>';
+            }
+            ?>
+        </ul>
+    </div>
+</div>
 
 <!-- Main -->
 <main>

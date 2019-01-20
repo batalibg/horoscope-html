@@ -13,12 +13,10 @@ window.jQuery = window.$ = jquery;
         var menu = $('.menu');
         var menuMask = $('.menu-mask');
         $(this).toggleClass('active');
-        menu.toggleClass('active');
-        menuMask.toggleClass('active');
-        if ($(menu).hasClass('active')) {
-            $('.burger-menu-text').text("Закрыть");
+        if (menu.is(':visible')) {
+            menu.slideUp();
         } else {
-            $('.burger-menu-text').text("Меню");
+            menu.slideDown();
         }
     });
 

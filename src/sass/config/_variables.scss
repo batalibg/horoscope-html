@@ -1,29 +1,31 @@
 $light: #e1e1e1;
-$primary: #ffbd69;
-$dark: #0d1013;
-$secondary: #ffffff;
+$primary: #1a05de;
+$dark: #333;
+$secondary: #71048c;
 
-$body-color: #464646 !default;
+$body-color: $dark;
 
-$font-size-base: 1rem;
-$font-family-base: 'HelveticaNeueCyr',
+$font-size-base: 1.14rem;
+$font-family-base: 'ProximaNovaExCn',
 sans-serif;
-$headings-font-family: 'Cuprum',
+$headings-font-family: 'Calibri',
 sans-serif;
-$headings-font-weight: bold;
+$headings-font-weight: normal;
 
-$link-hover-decoration: none !default;
-$input-btn-focus-width: 0 !default;
-$input-btn-focus-color: rgba(#fff, 0) !default;
-$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$link-hover-decoration: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
-$border-width: 0 !default;
+$border-width: 0;
 
 $border-radius: 0px;
 $btn-padding-x: 40px;
 $btn-padding-y: 20px;
 
-$h1-font-size: $font-size-base * 1.875 !default;
-$h2-font-size: $font-size-base * 1.75 !default;
-$h3-font-size: $font-size-base * 1.5 !default;
-$h4-font-size: $font-size-base * 1.125 !default;
+$h1-font-size: $font-size-base * 5.1;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.7;
+$h4-font-size: $font-size-base * 1.4;
+$h5-font-size: $font-size-base * 1.2;
+$h6-font-size: $font-size-base * 1.14;
