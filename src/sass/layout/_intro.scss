@@ -1,0 +1,196 @@
+#intro {
+  height: 600px;
+  max-height: 1080px;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    height: 100vh;
+  }
+
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    align-items: center;
+    color: #fff;
+    z-index: 20;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: flex;
+    }
+
+    &__text {
+      margin-top: -20px;
+    }
+  }
+
+  .slider-arrow {
+    left: 75%;
+    bottom: 0;
+    margin-left: -65px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      left: 58.4%;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      left: 66.7%;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      left: 75%;
+    }
+  }
+
+  .slider-nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 50px 60px;
+    background: rgba($dark, .5);
+    z-index: 3;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: block;
+    }
+
+    &__item {
+      position: relative;
+      transform: rotate(-90deg);
+      font-family: $headings-font-family;
+      color: #fff;
+
+      &::before {
+        content: '0';
+      }
+
+      &--last {
+        margin-bottom: 260px;
+      }
+    }
+  }
+}
+
+.intro-slider {
+  width: 100%;
+  min-height: 100%;
+
+  .flickity-page-dots {
+    bottom: 200px;
+    left: -53px;
+    transform: rotate(-90deg);
+    width: 100%;
+    max-width: 240px;
+    z-index: 4;
+    pointer-events: none;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: flex;
+    }
+
+    li {
+      flex: 1 0 auto;
+      margin: 0;
+      height: 2px;
+      background: #fff;
+      border-radius: 0;
+      opacity: 1;
+
+      &.is-selected {
+        background: $primary;
+      }
+    }
+  }
+}
+
+.intro-slider-item {
+  width: 100%;
+
+  .img {
+    @extend %pos;
+    @extend %img;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 60%;
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, .1) 0%, rgb(38, 45, 58) 100%);
+      opacity: .3;
+    }
+  }
+
+  .description {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 20px 25px;
+    color: #fff;
+    background: rgba(#262d3a, .5);
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding: 35px 45px;
+    }
+
+    &__subtitle {
+      position: relative;
+      padding-left: 20px;
+      line-height: 1;
+
+      &::before {
+        content: '';
+        @extend %pos;
+        right: auto;
+        width: 3px;
+        background: $primary;
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      background-image: linear-gradient(180deg, rgb(38, 46, 58) 0%, rgb(14, 16, 19) 100%);
+      position: relative;
+      bottom: auto;
+      right: auto;
+    }
+
+    &-item {
+      padding: 20px 15px;
+      background: rgba($dark, .5);
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        padding: 0;
+        background: transparent;
+      }
+    }
+
+    .title {
+      color: $primary;
+      margin-bottom: 15px;
+    }
+
+    .info-car {
+      margin-bottom: 20px;
+      display: none;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        display: block;
+      }
+    }
+  }
+}

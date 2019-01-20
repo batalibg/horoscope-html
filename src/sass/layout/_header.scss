@@ -1,0 +1,39 @@
+#app-header {
+  @extend %pos;
+  top: 0;
+  bottom: auto;
+  padding-top: 15px;
+  z-index: 100;
+
+  &.is-fixed {
+    position: fixed;
+    padding: 15px 0;
+    background: rgba($dark, .5);
+  }
+
+  .btn {
+    padding: 15px 25px;
+  }
+
+  .contacts-list {
+    margin-left: 25px;
+
+    li {
+      margin-bottom: 0;
+      a {
+        font-size: $font-size-base;
+      }
+    }
+  }
+
+  .header-item {
+    margin-left: -40px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 130px;
+  height: 32px;
+  @extend %img;
+}
