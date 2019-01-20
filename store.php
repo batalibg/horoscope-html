@@ -10,53 +10,53 @@ $nav = [
 
 $intro = [
     'title' => 'Гороскоп',
-    'list' = [
+    'list' => [
         [
-            'name' => 'aries',
+            'image' => '../images/icon/intro/intro-1.png',
             'title' => 'Овен',
         ],
         [
-            'name' => 'taurus',
+            'image' => '../images/icon/intro/intro-2.png',
             'title' => 'Телец',
         ],
         [
-            'name' => 'twins',
+            'image' => '../images/icon/intro/intro-3.png',
             'title' => 'Близнецы',
         ],
         [
-            'name' => 'twins',
+            'image' => '../images/icon/intro/intro-4.png',
             'title' => 'Рак',
         ],
         [
-            'name' => 'crayfish',
+            'image' => '../images/icon/intro/intro-5.png',
             'title' => 'Лев',
         ],
         [
-            'name' => 'virgo',
+            'image' => '../images/icon/intro/intro-6.png',
             'title' => 'Дева',
         ],
         [
-            'name' => 'libra',
+            'image' => '../images/icon/intro/intro-7.png',
             'title' => 'Весы',
         ],
         [
-            'name' => 'Scorpio',
+            'image' => '../images/icon/intro/intro-8.png',
             'title' => 'Скорпион',
         ],
         [
-            'name' => 'sagittarius',
+            'image' => '../images/icon/intro/intro-9.png',
             'title' => 'Стрелец',
         ],
         [
-            'name' => 'capricorn',
+            'image' => '../images/icon/intro/intro-10.png',
             'title' => 'Козерог',
         ],
         [
-            'name' => 'aquarius',
+            'image' => '../images/icon/intro/intro-11.png',
             'title' => 'Водолей',
         ],
         [
-            'name' => 'fish',
+            'image' => '../images/icon/intro/intro-12.png',
             'title' => 'Рыба',
         ],        
     ],
