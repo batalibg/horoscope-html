@@ -58,6 +58,6 @@ $intro = [
         [
             'image' => '../images/icon/intro/intro-12.png',
             'title' => 'Рыба',
-        ],        
+        ],
     ],
 ];
