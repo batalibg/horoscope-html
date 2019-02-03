@@ -93,13 +93,6 @@ window.jQuery = window.$ = jquery;
         $video.html('<video src="' + $link + '" loop muted autoplay></video>')
     }
 
-    /**
-     * Footer margin-top
-     */
-    // if ($(window).width() > 1024) {
-        $('.app-footer').css('margin-top', '-' + $('.app-footer').innerHeight() + 'px');
-    // }
-
 
     /**
      * Modal
@@ -130,31 +123,11 @@ window.jQuery = window.$ = jquery;
     /**
      * Animate scroll
      */
-    // ScrollReveal().reveal('.intro-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.intro-order', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-beforeAfter', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.response-item', {
-    //     origin: 'bottom',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
+    ScrollReveal().reveal('.intro-item', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    }, 100);
 
 
     /**

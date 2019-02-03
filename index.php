@@ -20,10 +20,12 @@ require_once('header.php');
                 </div>
                 <?php foreach($intro['list'] as $item) : ?>
                     <div class="col-sm-4">
-                        <a href="single.php" class="intro-item">
-                            <div class="icon" style="background-image: url('<?= $item['image'];?>')"></div>
-                            <div class="title"><?= $item['title'];?></div>
-                        </a>
+                        <div class="intro-item">
+                            <a href="single.php" class="sings-item">
+                                <div class="icon" style="background-image: url('<?= $item['image'];?>')"></div>
+                                <div class="title"><?= $item['title'];?></div>
+                            </a>
+                        </div>
                     </div>
                 <?php endforeach;?>
             </div>

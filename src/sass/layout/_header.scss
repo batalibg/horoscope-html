@@ -9,9 +9,11 @@
 }
 
 .logo {
-  font-size: $h5-font-size;
-  font-family: $headings-font-family;
-  color: #fff;
+  display: block;
+  width: 120px;
+  height: 50px;
+  @extend %img;
+  background-size: contain;
 }
 
 .header-nav-menu {

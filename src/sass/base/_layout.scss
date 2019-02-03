@@ -1,0 +1,70 @@
+.sings-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+  
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      margin: 50px auto;
+    }
+  
+    .icon {
+      width: 60px;
+      margin: 0 auto;
+      height: 60px;
+      @extend %img;
+      transition: .5s;
+      background-size: contain;
+  
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 100%;
+        height: 100px;
+      }
+    }
+  
+    .title {
+      margin-top: 20px;
+      color: $body-color;
+      font-size: $h5-font-size;
+      color: #000;
+  
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        font-size: $h4-font-size;
+      }
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #fff;
+      z-index: -2;
+      transition: .6s;
+  
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  
+    &:hover {
+  
+      .icon {
+        transform: scale(1.2);      
+      }
+  
+      &::before {
+        opacity: .6;
+        transform: translate(-50%, -50%) scale(1.2);
+        box-shadow: 0px 0px 39px 1px rgba(221,221,221,1);
+      }
+    }
+  }
+  

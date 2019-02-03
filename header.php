@@ -24,11 +24,11 @@
 
 
 <!-- Preloader -->
-<!--<div id="overlay">-->
-<!--    <div id="progstat"></div>-->
-<!--    <div id="progress"></div>-->
-<!--    <div class="logo" style="background-image:url('images/icon/logo/logo.png');"></div>-->
-<!--</div>-->
+<!-- <div id="overlay">
+   <div id="progstat"></div>
+   <div id="progress"></div>
+    <div class="logo" style="background-image: url(images/icon/logo/logo.gif)"></div>
+</div> -->
 
 
 <!-- App-header -->
@@ -36,9 +36,7 @@
     <div class="container">
         <div class="row justify-content-around align-items-center">
             <div class="col-auto">
-                <a href="/" class="logo">
-                    Logo
-                </a>            
+                <a href="/" class="logo" style="background-image: url(images/icon/logo/logo.svg)"></a>            
             </div>
             <div class="col-8 col-lg-6">
                 <div class="header-nav d-none d-sm-block">
