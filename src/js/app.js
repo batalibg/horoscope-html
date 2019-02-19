@@ -88,10 +88,10 @@ window.jQuery = window.$ = jquery;
     /**
      * Footer position
      */
-    var footer = $('#app-footer'); 
+    var footer = $('#app-footer');
     var footerHeight = $('#app-footer').innerHeight();
-    footer.css('margin-top', `-${footerHeight}px`); 
-    
+    footer.css('margin-top', `-${footerHeight}px`);
+
 
     /**
      * Modal
@@ -116,4 +116,11 @@ window.jQuery = window.$ = jquery;
     //     $(orderModal).removeClass('active');
     //     $(modalMask).removeClass('active');
     // });
+
+    /**
+     * Preloader
+     */
+    $(window).on('load', function () {
+        $('#preloader-wrapper').fadeOut('slow');
+    });
 })(jQuery)

@@ -1,11 +1,15 @@
 #app-header {
   position: absolute;
   width: 100%;
-  padding: 20px 0;
+  padding: 15px 0;
   overflow: hidden;
   background: rgba($dark, .8);
   color: #fff;
   z-index: 400;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 0;
+  }
 }
 
 .logo {
@@ -24,9 +28,35 @@
   li {
 
     a {
+      padding: 20px 0;
+      position: relative;
+      display: block;
       font-size: $h5-font-size;
       font-family: $headings-font-family;
       color: #fff;
+      opacity: .8;
+      transition: .5s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+        background: #fff;
+        transition: .5s;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        &::before {
+          left: 0;
+          right: 0;
+          box-shadow: 0px 2px 35px 8px rgba(255, 255, 255, 0.2);
+        }
+      }
     }
   }
 }

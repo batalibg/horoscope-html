@@ -24,18 +24,16 @@
 
 
 <!-- Preloader -->
-<!-- <div id="overlay">
-   <div id="progstat"></div>
-   <div id="progress"></div>
-    <div class="logo" style="background-image: url(images/icon/logo/logo.gif)"></div>
-</div> -->
+<div id="preloader-wrapper">
+    <img src="images/preloader/preloader.gif" alt="preloader" class="img">
+</div>
 
 
 <!-- App-header -->
 <header id="app-header">
     <div class="container">
         <div class="row justify-content-around align-items-center">
-            <div class="col-auto">
+            <div class="col-4 col-sm-auto">
                 <a href="/" class="logo" style="background-image: url(images/icon/logo/logo.svg)"></a>            
             </div>
             <div class="col-8 col-lg-6">
