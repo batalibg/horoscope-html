@@ -1,5 +1,4 @@
 import jquery from 'jquery';
-import ScrollReveal from 'scrollreveal';
 import IMask from 'imask';
 
 window.jQuery = window.$ = jquery;
@@ -11,7 +10,6 @@ window.jQuery = window.$ = jquery;
      */
     $('.burger-menu').click(function () {
         var menu = $('.menu');
-        var menuMask = $('.menu-mask');
         $(this).toggleClass('active');
         if (menu.is(':visible')) {
             menu.slideUp();
@@ -35,15 +33,10 @@ window.jQuery = window.$ = jquery;
             $('body,html').animate({
                 scrollTop: top
             }, 1500);
-
-            $('.burger-menu').removeClass('active');
-            $('.burger-menu-text').text("Меню");
-            $('.menu').removeClass('active');
-            $('.menu-mask').removeClass('active');
         }
     });
 
-     /**
+    /**
      * Form
      */
     $('.form-control').on('focus', function () {
@@ -57,7 +50,6 @@ window.jQuery = window.$ = jquery;
             $(this).parents('.form-group').removeClass('in-focus');
         }
     });
-
 
     /**
      * Phone mask
@@ -93,6 +85,13 @@ window.jQuery = window.$ = jquery;
         $video.html('<video src="' + $link + '" loop muted autoplay></video>')
     }
 
+    /**
+     * Footer position
+     */
+    var footer = $('#app-footer'); 
+    var footerHeight = $('#app-footer').innerHeight();
+    footer.css('margin-top', `-${footerHeight}px`); 
+    
 
     /**
      * Modal
@@ -117,54 +116,4 @@ window.jQuery = window.$ = jquery;
     //     $(orderModal).removeClass('active');
     //     $(modalMask).removeClass('active');
     // });
-
-
-
-    /**
-     * Animate scroll
-     */
-    ScrollReveal().reveal('.intro-item', {
-        origin: 'bottom',
-        delay: 400,
-        distance: '200px',
-    }, 100);
-
-
-    /**
-     * Preloader
-     */
-    // ;(function(){
-    //     function id(v){return document.getElementById(v); }
-    //     function loadbar() {
-    //         var ovrl = id("overlay"),
-    //             prog = id("progress"),
-    //             stat = id("progstat"),
-    //             img = document.images,
-    //             c = 0;
-    //         let tot = img.length;
-    //
-    //         function imgLoaded(){
-    //             c += 1;
-    //             var perc = ((100/tot*c) << 0) +"%";
-    //             prog.style.width = perc;
-    //             stat.innerHTML = perc;
-    //             stat.style.left = perc;
-    //             if(c===tot) return doneLoading();
-    //         }
-    //         function doneLoading(){
-    //             ovrl.style.opacity = 0;
-    //             setTimeout(function(){
-    //                 ovrl.style.display = "none";
-    //             }, 1200);
-    //         }
-    //         for(var i=0; i<tot; i++) {
-    //             var tImg     = new Image();
-    //             tImg.onload  = imgLoaded;
-    //             tImg.onerror = imgLoaded;
-    //             tImg.src     = img[i].src;
-    //         }
-    //     }
-    //     document.addEventListener('DOMContentLoaded', loadbar, false);
-    // }());
-
 })(jQuery)

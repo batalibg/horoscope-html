@@ -2,7 +2,7 @@
 </main>
 
 <!-- App-footer -->
-<footer id="app-footer" class="app-footer">
+<footer id="app-footer">
     <div class="container">
         <div class="row">
             <div class="col-12">
